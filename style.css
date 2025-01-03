@@ -2,6 +2,8 @@
     font-family: 'NDot45';
     src: url('/Tictactoe/assets/ndot-45-inspired-by-nothing.ttf') format('truetype');
     src: url('/Tictactoe/ndot-45-inspired-by-nothing.ttf') format('truetype');
+    src: url('/Tictactoe/assets/ndot-45-inspired-by-nothing.ttf') format('ttf');
+    src: url('/Tictactoe/ndot-45-inspired-by-nothing.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
