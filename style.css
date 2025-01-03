@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'NDot45';
+    src: url('/assets/ndot-45-inspired-by-nothing.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ndot45", sans-serif;
+    color: white
+  
+  
+}
+
+body{
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+h1{
+    margin: 40px 0 30px 0;
+    font-size: 28px;
+    font-weight: bolder;
+    
+   
+}
+
+.container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scoreBoard{
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    font-family: sans-serif;
+    cursor: not-allowed;
+}
+
+.grid{
+    margin-top: 50px;
+   
+}
+
+/* Remove right border for the last column in each row */
+.grid .row .col:nth-child(3),
+.grid .row .col:nth-child(6),
+.grid .row .col:nth-child(9) {
+    border-right: none;
+}
+
+/* Remove bottom border for the last row */
+.grid .row:nth-child(3) .col {
+    border-bottom: none;
+}
+
+/* Remove left border for the first column in each row */
+.grid .row .col:nth-child(1),
+.grid .row .col:nth-child(4),
+.grid .row .col:nth-child(7) {
+    border-left: none;
+}
+
+/* Remove top border for the first row */
+.grid .row:nth-child(1) .col {
+    border-top: none;
+}
+
+
+
+.col{
+
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 600;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.row{
+display: flex;
+}
+
+.resetBtn{
+    padding: 8px 16px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: "Ndot45", sans-serif;
+    background-color: #ff4500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.resetBtn:hover{
+    background-color: black;
+    box-shadow: 0 5px#ffffff; 
+    transform: translateY(-2px);
+
+}
+
+.resetBtn:active {
+    transform: translateY(2px); /* Pressed effect */
+    box-shadow: none; /* Remove shadow for pressed look */
+  }
+
+#replayBtn{
+    padding: 4px 8px;
+    margin-top: 20px;
+    font-family: "Ndot45", sans-serif;
+    background-color: #ff4500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+
+#replayBtn:hover{
+    background-color: black;
+    box-shadow: 0 5px#ffffff; 
+    transform: translateY(-2px);
+
+}
+
+#replayBtn:active {
+    transform: translateY(2px); /* Pressed effect */
+    box-shadow: none; /* Remove shadow for pressed look */
+  }
+
+
+
+
+
+
+
+
+  #winnerOverlay {
+    position: fixed;
+    min-height: 200px;
+    min-width: 400px;
+    top: 50%;
+    left: 50%;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    background-color:  rgba(65, 65, 65, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.drawMessage {
+    position: fixed;
+    min-height: 200px;
+    min-width: 400px;
+    top: 50%;
+    left: 50%;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    background-color:  rgba(65, 65, 65, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+
+}
