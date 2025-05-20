@@ -5,7 +5,10 @@
   font-style: normal;
 }
 
-body {
+
+    height: 100vw;
+    display: flex;
+    justify-contebody {
   font-family: 'NDot45', sans-serif;
 }
 
@@ -20,10 +23,7 @@ body {
   
 }
 
-body{
-    height: 100vw;
-    display: flex;
-    justify-content: center;
+body{nt: center;
     background-color: black;
 
 }
@@ -43,7 +43,7 @@ h1{
 }
 
 @media (max-width: 600px) {
-    p {
+    .scoreBoard {
         font-size: 14px;
         justify-content: center; /* Horizontally center items */
     }
