@@ -6,6 +6,11 @@
 }
 
 body {
+  font-family: 'NDot45', sans-serif;
+}
+
+
+body {
     height: 100vw;
     display: flex;
     justify-content: center;
