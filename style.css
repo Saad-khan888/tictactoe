@@ -43,12 +43,10 @@ h1{
 }
 
 @media (max-width: 600px) {
-  .scoreboard {
-    font-size: 1.2rem;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-  }
+    .scoreBoard {
+        font-size: 18px;
+        justify-content: center; /* Horizontally center items */
+    }
 }
 
 .scoreBoard{
