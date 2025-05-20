@@ -42,6 +42,15 @@ h1{
     flex-direction: column;
 }
 
+@media (max-width: 600px) {
+  .scoreboard {
+    font-size: 1.2rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+}
+
 .scoreBoard{
     flex-direction: row;
     display: flex;
