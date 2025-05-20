@@ -43,7 +43,7 @@ h1{
 }
 
 @media (max-width: 600px) {
-    .scoreBoard {
+    p {
         font-size: 14px;
         justify-content: center; /* Horizontally center items */
     }
