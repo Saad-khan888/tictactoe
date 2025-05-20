@@ -5,11 +5,12 @@
   font-style: normal;
 }
 
-
+body {
     height: 100vw;
     display: flex;
-    justify-contebody {
-  font-family: 'NDot45', sans-serif;
+    justify-content: center;
+    background-color: black;
+    font-family: 'NDot45', sans-serif;
 }
 
 
